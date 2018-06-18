@@ -11,6 +11,8 @@ function reset(){
 }
 
 var display_text = document.getElementById("simple_text");
+var button_click = document.getElementById("ButtonHere");
+button_click.addEventListener("click", Cheese_Selected);
 function Cheese_Selected(){
 	if(document.getElementById("AC").checked==true){
 		display_text.value = "Really? Have you considered expanding your horizions?";
@@ -28,6 +30,8 @@ function Cheese_Selected(){
 		alert("none selected");
 	}
 }
+var clear_all = document.getElementById("clear");
+clear_all.addEventListener("click", clear());
 function clear(){
 	display_text.value = "";
 }
